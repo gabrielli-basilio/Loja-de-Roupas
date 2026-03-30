@@ -1038,3 +1038,110 @@ categorias 8
   flex-wrap: wrap;
   justify-content: center;
 }
+/* --- Rodapé com fundo escuro --- */
+footer {
+  background: var(--bg2);
+  border-top: 1px solid var(--border);
+  padding: 64px 32px 32px;
+}
+
+
+/* --- Grid de 4 colunas do rodapé --- */
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 48px;
+}
+
+
+/* --- Nome da marca no rodapé --- */
+.footer-brand {
+  font-family: var(--font-title);
+  font-size: 18px;
+  color: var(--cyan);
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+
+/* --- Descrição da marca --- */
+.footer-brand-desc {
+  font-size: 14px;
+  color: var(--gray);
+  line-height: 1.7;
+  max-width: 260px;
+  margin-bottom: 20px;
+}
+
+
+/* --- Links sociais --- */
+.social-links {
+  display: flex;
+  gap: 12px;
+}
+
+
+.social-link {
+  font-size: 20px;
+  transition: transform 0.2s;
+}
+
+
+.social-link:hover { transform: scale(1.2); }
+
+
+/* --- Título de coluna do rodapé --- */
+.footer-col-title {
+  font-family: var(--font-title);
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: var(--white);
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+
+/* --- Links das colunas --- */
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.footer-links a {
+  font-size: 14px;
+  color: var(--gray);
+  transition: color 0.2s;
+}
+
+
+.footer-links a:hover { color: var(--cyan); }
+
+
+/* --- Barra inferior do rodapé --- */
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+
+/* --- Texto de copyright --- */
+.footer-copy {
+  font-size: 13px;
+  color: var(--gray);
+}
+
+
+/* --- Versão do build --- */
+.footer-pixel {
+  font-family: var(--font-title);
+  font-size: 11px;
+  color: var(--purple);
+  letter-spacing: 2px;
+}
