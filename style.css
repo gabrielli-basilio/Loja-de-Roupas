@@ -80,6 +80,13 @@ img {
     letter-spacing: 2px;
 }
 
+/* --- Links do menu --- */
+.nav-links {
+    display: flex;
+    gap: 32px;
+}
+
+
 
 /* --- Faixa externa do ticker --- */
 
@@ -92,7 +99,7 @@ img {
 
 /* --- Faixa interna que se move --- */
 .ticker-inner {
-  display: inline-flex;
-  gap: 48px;
-  animation: ticker-move 28s linear infinite;
+    display: inline-flex;
+    gap: 48px;
+    animation: ticker-move 28s linear infinite;
 }
