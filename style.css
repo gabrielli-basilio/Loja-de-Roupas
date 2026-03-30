@@ -75,15 +75,25 @@ img {
 /* --- Faixa externa do ticker --- */
 
 .ticker {
-  overflow: hidden;
-  background: var(--cyan);
-  padding: 10px 0;
-  white-space: nowrap;
+    overflow: hidden;
+    background: var(--cyan);
+    padding: 10px 0;
+    white-space: nowrap;
 }
 
 /* --- Faixa interna que se move --- */
 .ticker-inner {
-  display: inline-flex;
-  gap: 48px;
-  animation: ticker-move 28s linear infinite;
+    display: inline-flex;
+    gap: 48px;
+    animation: ticker-move 28s linear infinite;
+}
+
+/* --- Itens do ticker --- */
+.ticker-item {
+    font-family: var(--font-main);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--bg);
 }
