@@ -122,12 +122,33 @@ img {
     transition: background 0.2s, color 0.2s;
 }
 
-
 .btn-cadastrar:hover {
     background: var(--cyan);
     color: var(--bg);
 }
 
+/* --- Ícone do carrinho --- */
+.cart-icon {
+    position: relative;
+    font-size: 20px;
+}
+
+/* --- Badge de quantidade no carrinho --- */
+.cart-badge {
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    background: var(--pink);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* --- Faixa externa do ticker --- */
 
