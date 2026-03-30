@@ -327,3 +327,26 @@ img {
     letter-spacing: 1px;
 }
 
+/* --- Linha de preço + botão adicionar --- */
+.product-price-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4px;
+}
+
+/* --- Preço atual --- */
+.product-price {
+    font-family: var(--font-title);
+    font-size: 16px;
+    color: var(--cyan);
+}
+
+/* --- Preço antigo riscado --- */
+.product-price-old {
+    font-size: 12px;
+    color: var(--gray);
+    text-decoration: line-through;
+    margin-left: 6px;
+}
+
