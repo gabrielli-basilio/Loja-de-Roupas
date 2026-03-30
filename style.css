@@ -748,4 +748,534 @@ display: grid;
     }
 }
 
+.newsletter {
+  padding: 80px 32px;
+  background: linear-gradient(135deg, rgba(123,47,255,0.08), rgba(0,245,255,0.04));
+  border-top: 1px solid rgba(0,245,255,0.1);
+}
 
+.newsletter-inner {
+  max-width: 640px;
+  margin: 0 auto;
+}
+.newsletter-eyebrow {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 13px;
+  color: var(--purple);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 16px;
+}
+
+.newsletter-title {
+  font-family: 'Press Start 2P', monospace;
+  font-size: clamp(14px, 2.5vw, 20px);
+  line-height: 1.6;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+.newsletter-title span { color: var(--cyan); }
+
+.newsletter-desc {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 16px;
+  color: var(--gray);
+  margin-bottom: 36px;
+}
+.newsletter-form { display: flex; flex-direction: column; gap: 16px; }
+
+.form-row { display: flex; gap: 16px; }
+
+.form-group { display: flex; flex-direction: column; gap: 6px; flex: 1; }
+
+.form-label {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 10px;
+  color: var(--gray);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.form-input, .form-select, .form-textarea {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(0,245,255,0.2);
+  color: var(--white);
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 15px;
+  padding: 12px 14px;
+  outline: none;
+  transition: border-color 0.2s;
+  width: 100%;
+}
+.form-input:focus, .form-select:focus, .form-textarea:focus {
+  border-color: var(--cyan);
+}
+.form-textarea { resize: vertical; min-height: 90px; }
+.form-select { cursor: pointer; }
+
+.form-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  cursor: pointer;
+}
+.form-check input { margin-top: 3px; accent-color: var(--cyan); }
+.form-check-label {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 14px;
+  color: var(--gray);
+}
+.form-check-label a { color: var(--cyan); text-decoration: none; }
+.form-check-label a:hover { text-decoration: underline; }
+
+.form-submit {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--bg);
+  background: linear-gradient(135deg, var(--cyan), var(--purple));
+  border: none;
+  padding: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  width: 100%;
+  transition: opacity 0.2s;
+}
+.form-submit:hover { opacity: 0.88; }
+
+.form-success {
+  display: none;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid var(--cyan);
+  border-radius: 4px;
+  background: rgba(0,245,255,0.04);
+  text-align: center;
+}
+.form-success p:first-child {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 9px;
+  color: var(--cyan);
+  margin-bottom: 8px;
+}
+.form-success p:last-child {
+  font-family: 'Rajdhani', sans-serif;
+  color: var(--gray);
+}
+
+@media (max-width: 768px) {
+  .form-row { flex-direction: column; }
+  .newsletter { padding: 44px 20px; }
+}
+
+categorias
+
+
+/* --- Grid de categorias --- */
+.categories-grid {
+  display: grid;
+  grid-template-columns:repeat(3, 1fr);
+  grid-template-rows:auto auto;
+  gap:16px;
+}
+
+
+/* --- Card grande ocupa coluna 1, linhas 1 e 2 --- */
+.cat-card.large {
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+
+
+/* --- Card de categoria base --- */
+.cat-card {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+
+.cat-card:hover {
+  border-color: var(--cyan);
+  transform: translateY(-4px);
+}
+
+
+/* --- Área da imagem da categoria --- */
+.cat-img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  background: var(--bg2);
+}
+
+
+/* --- Card grande tem imagem mais alta --- */
+.cat-card.large .cat-img {
+  aspect-ratio: 4/5;
+}
+
+
+/* --- Imagem da categoria --- */
+.cat-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s;
+}
+
+
+.cat-card:hover .cat-img img {
+  transform: scale(1.04);
+}
+
+
+/* --- Informações da categoria --- */
+.cat-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+
+/* --- Label da categoria --- */
+.cat-label {
+  font-size: 11px;
+  color: var(--purple);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+
+/* --- Título da categoria --- */
+.cat-title {
+  font-family: var(--font-title);
+  font-size: 16px;
+  color: var(--white);
+  letter-spacing: 1px;
+}
+
+
+/* --- Descrição da categoria --- */
+.cat-desc {
+  font-size: 13px;
+  color: var(--gray);
+  line-height: 1.6;
+}
+
+
+/* --- Link de ação da categoria --- */
+.cat-link {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--cyan);
+  margin-top: 4px;
+  letter-spacing: 0.5px;
+}
+
+/* --- Seção de newsletter com borda neon --- */
+.newsletter {
+  padding: 80px 32px;
+  background: var(--bg2);
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+
+/* --- Conteúdo centralizado --- */
+.newsletter-inner {
+  max-width: 560px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+
+/* --- Eyebrow da newsletter --- */
+.newsletter-eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: var(--purple);
+  text-transform: uppercase;
+}
+
+
+/* --- Título da newsletter --- */
+.newsletter-title {
+  font-family: var(--font-title);
+  font-size: clamp(28px, 4vw, 48px);
+  line-height: 1.1;
+  color: var(--white);
+}
+
+
+/* --- Palavra destacada --- */
+.newsletter-title span { color: var(--cyan); }
+
+
+/* --- Descrição --- */
+.newsletter-desc {
+  font-size: 16px;
+  color: var(--gray);
+  line-height: 1.7;
+}
+
+
+/* --- Botões da newsletter --- */
+.newsletter-btns {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* --- Rodapé com fundo escuro --- */
+footer {
+  background: var(--bg2);
+  border-top: 1px solid var(--border);
+  padding: 64px 32px 32px;
+}
+
+
+/* --- Grid de 4 colunas do rodapé --- */
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 48px;
+}
+
+
+/* --- Nome da marca no rodapé --- */
+.footer-brand {
+  font-family: var(--font-title);
+  font-size: 18px;
+  color: var(--cyan);
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+
+/* --- Descrição da marca --- */
+.footer-brand-desc {
+  font-size: 14px;
+  color: var(--gray);
+  line-height: 1.7;
+  max-width: 260px;
+  margin-bottom: 20px;
+}
+
+
+/* --- Links sociais --- */
+.social-links {
+  display: flex;
+  gap: 12px;
+}
+
+
+.social-link {
+  font-size: 20px;
+  transition: transform 0.2s;
+}
+
+
+.social-link:hover { transform: scale(1.2); }
+
+
+/* --- Título de coluna do rodapé --- */
+.footer-col-title {
+  font-family: var(--font-title);
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: var(--white);
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+
+/* --- Links das colunas --- */
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.footer-links a {
+  font-size: 14px;
+  color: var(--gray);
+  transition: color 0.2s;
+}
+
+
+.footer-links a:hover { color: var(--cyan); }
+
+
+/* --- Barra inferior do rodapé --- */
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+
+/* --- Texto de copyright --- */
+.footer-copy {
+  font-size: 13px;
+  color: var(--gray);
+}
+
+
+/* --- Versão do build --- */
+.footer-pixel {
+  font-family: var(--font-title);
+  font-size: 11px;
+  color: var(--purple);
+  letter-spacing: 2px;
+}
+
+/* ===== FORMULÁRIO / CONTATO ===== */
+.newsletter {
+  padding: 80px 32px;
+  text-align: center;
+}
+.newsletter-inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.newsletter-eyebrow {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 8px;
+  color: #ff00cc;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+.newsletter-title {
+  font-family: 'Press Start 2P', monospace;
+  font-size: clamp(11px, 1.8vw, 16px);
+  line-height: 1.7;
+  margin-bottom: 14px;
+  color: #ffffff;
+}
+.newsletter-title span { color: #00f5ff; }
+
+.newsletter-desc {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 15px;
+  color: #cccccc;
+  margin-bottom: 36px;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: left;
+}
+.form-row { display: flex; gap: 14px; }
+.form-group { flex: 1; display: flex; flex-direction: column; gap: 6px; }
+
+.form-label {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 9px;
+  color: #cccccc;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  background: rgba(10, 10, 40, 0.8);
+  border: 1px solid rgba(0, 245, 255, 0.2);
+  border-radius: 2px;
+  color: #ffffff;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 15px;
+  padding: 12px 14px;
+  outline: none;
+  width: 100%;
+  transition: border-color 0.3s;
+}
+.form-input::placeholder,
+.form-textarea::placeholder { color: rgba(204, 204, 204, 0.3); }
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus { border-color: #00f5ff; }
+.form-select option { background: #0d0d2b; }
+.form-textarea { resize: vertical; min-height: 90px; }
+
+.form-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  cursor: pointer;
+}
+.form-check input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #00f5ff;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+.form-check-label {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 13px;
+  color: #cccccc;
+  line-height: 1.5;
+}
+.form-check-label a { color: #00f5ff; text-decoration: none; }
+
+.form-submit {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #0a0a1a;
+  background: linear-gradient(135deg, #00f5ff, #7b2fff);
+  border: none;
+  padding: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  width: 100%;
+  transition: opacity 0.2s;
+}
+.form-submit:hover { opacity: 0.88; }
+
+.form-success {
+  display: none;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #00f5ff;
+  border-radius: 4px;
+  background: rgba(0, 245, 255, 0.04);
+  text-align: center;
+}
+.form-success p:first-child {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 9px;
+  color: #00f5ff;
+  margin-bottom: 8px;
+}
+.form-success p:last-child {
+  font-family: 'Rajdhani', sans-serif;
+  color: #cccccc;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .form-row { flex-direction: column; }
+}
