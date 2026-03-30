@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo — NEONCRAFT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="catalogo.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <a href="index.html" class="nav-logo">NEONCRAFT</a>
+    <ul class="nav-links">
+      <li><a href="catalogo.html" class="active">Catálogo</a></li>
+      <li><a href="index.html#categorias">Categorias</a></li>
+      <li><a href="index.html#sobre">Sobre</a></li>
+      <li><a href="cadastro.html">Contato</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="cadastro.html" class="btn-cadastrar">Cadastrar</a>
+      <a href="carrinho.html" class="cart-icon">🛒
+        <span class="cart-badge">0</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Ticker -->
+  <div class="ticker">
+    <div class="ticker-inner">
+      <span class="ticker-item">★ FRETE GRÁTIS ACIMA DE R$250</span>
+      <span class="ticker-item">★ NOVA COLEÇÃO PIXEL CITY</span>
+      <span class="ticker-item">★ DROP EXCLUSIVO — 48H APENAS</span>
+      <span class="ticker-item">★ PARCELE EM ATÉ 12X SEM JUROS</span>
+      <span class="ticker-item">★ FRETE GRÁTIS ACIMA DE R$250</span>
+      <span class="ticker-item">★ NOVA COLEÇÃO PIXEL CITY</span>
+      <span class="ticker-item">★ DROP EXCLUSIVO — 48H APENAS</span>
+      <span class="ticker-item">★ PARCELE EM ATÉ 12X SEM JUROS</span>
+    </div>
+  </div>
+
+  <!-- Page Header -->
+  <div class="catalog-header">
+    <div class="catalog-header-inner">
+      <p class="hero-eyebrow">▶ PIXEL CITY 2099</p>
+      <h1 class="catalog-title">CATÁLOGO <span>COMPLETO</span></h1>
+      <p class="catalog-desc">Todos os drops, todas as coleções. Filtre, explore e monte o seu loadout.</p>
+    </div>
+    <nav class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <span>Catálogo</span>
+    </nav>
+  </div>
+
+  <!-- Layout principal -->
+  <div class="catalog-layout">
+
+    <!-- Sidebar -->
+    <aside class="catalog-sidebar">
+      <div class="filter-form">
+
+        <!-- // BUSCAR -->
+        <div class="filter-group">
+          <label class="filter-label" for="busca">// BUSCAR</label>
+          <div class="search-wrap">
+            <input
+              type="search"
+              id="busca"
+              name="q"
+              class="filter-search"
+              placeholder="Nome do produto..."
+            />
+            <button type="button" class="search-submit-btn" aria-label="Buscar">🔍</button>
+          </div>
+        </div>
+
+        <!-- // CATEGORIA -->
+        <div class="filter-group">
+          <span class="filter-label">// CATEGORIA</span>
+          <ul class="filter-list">
+            <li>
+              <a href="#cat-moletom" class="filter-radio-btn collection-link">
+                ▶ Moletom <span class="filter-count">5</span>
+              </a>
+            </li>
+            <li>
+              <a href="#cat-camiseta" class="filter-radio-btn collection-link">
+                ▶ Camiseta <span class="filter-count">3</span>
+              </a>
+            </li>
+            <li>
+              <a href="#cat-jaqueta" class="filter-radio-btn collection-link">
+                ▶ Jaqueta <span class="filter-count">1</span>
+              </a>
+            </li>
+            <li>
+              <a href="#cat-calca" class="filter-radio-btn collection-link">
+                ▶ Calça <span class="filter-count">1</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <main class="catalog-main">
+
+      <!-- SEÇÃO: CATEGORIA — MOLETOM -->
+      <section id="cat-moletom" class="collection-section">
+        <div class="collection-header">
+          <h2 class="collection-title">// <span>MOLETOM</span></h2>
+          <p class="collection-desc">Todos os moletons do catálogo. Oversized, crewneck, zip.</p>
+        </div>
+        <div class="catalog-grid">
+
+          <a href="#" class="product-card">
+            <div class="product-img">
+              <img src="Img/Img_destaque/ALIEN PROTOCOL HOODIE.jpg" alt="Alien Protocol Hoodie" />
+              <span class="product-badge badge-new">Novo</span>
+              <div class="product-overlay"><span class="overlay-btn">Ver Detalhes</span></div>
+            </div>
+            <div class="product-info">
+              <p class="product-name">ALIEN PROTOCOL HOODIE</p>
+              <div class="product-price-row"><span class="product-price">R$279</span><span class="btn-add">+</span></div>
+            </div>
+          </a>
+
+          <a href="#" class="product-card">
+            <div class="product-img">
+              <img src="Img/Img_Scroll/ALIEN DROP.png" alt="Alien Drop Crewneck" />
+              <span class="product-badge badge-new">Novo</span>
+              <div class="product-overlay"><span class="overlay-btn">Ver Detalhes</span></div>
+            </div>
+            <div class="product-info">
+              <p class="product-name">ALIEN DROP CREWNECK</p>
+              <div class="product-price-row"><span class="product-price">R$349</span><span class="btn-add">+</span></div>
+            </div>
+          </a>
+
+          <a href="#" class="product-card">
+            <div class="product-img">
+              <img src="Img/Img_Scroll/GLITCH.png" alt="Glitch Oversized Hoodie" />
+              <span class="product-badge badge-hot">Hot</span>
+              <div class="product-overlay"><span class="overlay-btn">Ver Detalhes</span></div>
+            </div>
+            <div class="product-info">
+              <p class="product-name">GLITCH OVERSIZED HOODIE</p>
+              <div class="product-price-row"><span class="product-price">R$319</span><span class="btn-add">+</span></div>
+            </div>
+          </a>
+
+          <a href="#" class="product-card">
+            <div class="product-img">
+              <img src="Img/Img_Scroll/PIXEL ART.png" alt="Alien Signal Tee" />
+              <div class="product-overlay"><span class="overlay-btn">Ver Detalhes</span></div>
+            </div>
+            <div class="product-info">
+              <p class="product-name">PIXEL ART OVERSIZE TEE</p>
+              <div class="product-price-row"><span class="product-price">R$144</span><span class="btn-add">+</span></div>
+            </div>
+          </a>
+
+          <a href="#" class="product-card">
+            <div class="product-img">
+              <img src="Img/Img_Scroll/NEON RUN.png" alt="Neon Run Jersey" />
+              <span class="product-badge badge-new">Novo</span>
+              <div class="product-overlay"><span class="overlay-btn">Ver Detalhes</span></div>
+            </div>
+            <div class="product-info">
+              <p class="product-name">NEON RUN JERSEY</p>
+              <div class="product-price-row"><span class="product-price">R$159</span><span class="btn-add">+</span></div>
+            </div>
+          </a>
+
+        </div>
+      </section>
+
+      <!-- SEÇÃO: CATEGORIA — CAMISETA -->
+      <section id="cat-camiseta" class="collection-section">
+        <div class="collection-header">
+          <h2 class="collection-title">// <span>CAMISETA</span></h2>
+          <p class="collection-desc">Tees, jerseys e manga longa. Do básico ao oversized.</p>
+        </div>
+        <div class="catalog-grid">
+
+          <a href="#" class="product-card">
+            <div class="product-img">
+              <img src="Img/Img_destaque/CTRL+ALT+DEFEAT TEE.jpg" alt="Ctrl Alt Defeat Tee" />
+              <span class="product-badge badge-hot">Hot</span>
+              <div class="product-overlay"><span class="overlay-btn">Ver Detalhes</span></div>
+            </div>
+            <div class="product-info">
+              <p class="product-name">CTRL+ALT+DEFEAT TEE</p>
+              <div class="product-price-row"><div><span class="product-price">R$149</span><span class="product-price-old">R$199</span></div><span class="btn-add">+</span></div>
+            </div>
+          </a>
+
+          <a href="#" class="product-card">
+            <div class="product-img">
+              <img src="Img/Img_destaque/CITY 2099 LONGSLEEVE.jpg" alt="City Zip Hoodie" />
+              <div class="product-overlay"><span class="overlay-btn">Ver Detalhes</span></div>
+            </div>
+            <div class="product-info">
+              <p class="product-name">CITY ZIP HOODIE</p>
+              <div class="product-price-row"><span class="product-price">R$289</span><span class="btn-add">+</span></div>
+            </div>
+          </a>
+
+          <a href="#" class="product-card">
+            <div class="product-img">
+              <img src="Img/Img_Scroll/CITY 2099.png" alt="City 2099 Tech Jacket" />
+              <span class="product-badge badge-hot">Hot</span>
+              <div class="product-overlay"><span class="overlay-btn">Ver Detalhes</span></div>
+            </div>
+            <div class="product-info">
+              <p class="product-name">CITY 2099</p>
+              <div class="product-price-row"><span class="product-price">R$479</span><span class="btn-add">+</span></div>
+            </div>
+          </a>
+
+        </div>
+      </section>
+
+      <!-- SEÇÃO: CATEGORIA — JAQUETA -->
+      <section id="cat-jaqueta" class="collection-section">
+        <div class="collection-header">
+          <h2 class="collection-title">// <span>JAQUETA</span></h2>
+          <p class="collection-desc">College, tech e varsity. Camadas que fazem o look.</p>
+        </div>
+        <div class="catalog-grid">
+
+          <a href="#" class="product-card">
+            <div class="product-img">
+              <img src="Img/Img_destaque/Jaqueta apex.jpg" alt="College Jacket" />
+              <span class="product-badge badge-sale">-30%</span>
+              <div class="product-overlay"><span class="overlay-btn">Ver Detalhes</span></div>
+            </div>
+            <div class="product-info">
+              <p class="product-name">COLLEGE JACKET BLK/WHT</p>
+              <div class="product-price-row"><div><span class="product-price">R$389</span><span class="product-price-old">R$559</span></div><span class="btn-add">+</span></div>
+            </div>
+          </a>
+
+        </div>
+      </section>
+
+      <!-- SEÇÃO: CATEGORIA — CALÇA -->
+      <section id="cat-calca" class="collection-section">
+        <div class="collection-header">
+          <h2 class="collection-title">// <span>CALÇA</span></h2>
+          <p class="collection-desc">Cargo, track e tech pants. O baixo do seu loadout.</p>
+        </div>
+        <div class="catalog-grid">
+
+          <a href="#" class="product-card">
+            <div class="product-img">
+              <img src="Img/Img_Scroll/CARGO PANTS.png" alt="Neon Cargo Pants" />
+              <div class="product-overlay"><span class="overlay-btn">Ver Detalhes</span></div>
+            </div>
+            <div class="product-info">
+              <p class="product-name">CARGO PANTS</p>
+              <div class="product-price-row"><span class="product-price">R$259</span><span class="btn-add">+</span></div>
+            </div>
+          </a>
+
+        </div>
+      </section>
+
+    </main>
+  </div><!-- /catalog-layout -->
+
+  <!-- Footer -->
+  <footer class="catalog-footer">
+    <p>© 2099 NEONCRAFT — Feito para quem vive no grid.</p>
+    <div class="footer-links">
+      <a href="#">Política de Privacidade</a>
+      <a href="#">Trocas e Devoluções</a>
+      <a href="cadastro.html">Contato</a>
+    </div>
+  </footer>
+
+</body>
+</html>
