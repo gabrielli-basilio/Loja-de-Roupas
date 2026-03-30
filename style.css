@@ -253,3 +253,21 @@ img {
 .product-card:hover .product-img img {
     transform: scale(1.04);
 }
+
+/* --- Badge do produto (Novo, Hot, Sale) --- */
+.product-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-family: var(--font-main);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+.badge-new  { background: var(--cyan);   color: var(--bg); }
+.badge-hot  { background: var(--pink);   color: #fff; }
+.badge-sale { background: var(--yellow); color: var(--bg); }
