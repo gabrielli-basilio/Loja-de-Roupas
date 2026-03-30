@@ -89,3 +89,10 @@ img {
     padding: 10px 0;
     white-space: nowrap;
 }
+
+/* --- Faixa interna que se move --- */
+.ticker-inner {
+  display: inline-flex;
+  gap: 48px;
+  animation: ticker-move 28s linear infinite;
+}
