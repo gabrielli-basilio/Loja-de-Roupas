@@ -172,8 +172,178 @@
 
     </section>
 
-    <!-- Seção de pagamento -->
-    <section id="pagamento" class="payment-layout"></section>
+    <!-- ===== PAGAMENTO ===== -->
+    <section id="pagamento" class="payment-layout">
+
+        <!-- Formulário de entrega + pagamento -->
+        <div class="payment-form">
+
+            <!-- Dados de entrega -->
+            <div class="payment-section">
+                <p class="payment-section-title">// 01 — Dados de Entrega</p>
+                <form action="#" method="post" class="payment-form-inner">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="ent-nome">Nome</label>
+                            <input class="form-input" type="text" id="ent-nome" name="nome" placeholder="Seu nome"
+                                required />
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="ent-sobrenome">Sobrenome</label>
+                            <input class="form-input" type="text" id="ent-sobrenome" name="sobrenome"
+                                placeholder="Sobrenome" required />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="ent-email">E-mail</label>
+                        <input class="form-input" type="email" id="ent-email" name="email" placeholder="seu@email.com"
+                            required />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="ent-telefone">Telefone</label>
+                        <input class="form-input" type="tel" id="ent-telefone" name="telefone"
+                            placeholder="(11) 90000-0000" />
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="ent-cep">CEP</label>
+                            <input class="form-input" type="text" id="ent-cep" name="cep" placeholder="00000-000"
+                                required />
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="ent-estado">Estado</label>
+                            <select class="form-select" id="ent-estado" name="estado">
+                                <option value="">Selecione...</option>
+                                <option>SP</option>
+                                <option>RJ</option>
+                                <option>MG</option>
+                                <option>RS</option>
+                                <option>SC</option>
+                                <option>PR</option>
+                                <option>BA</option>
+                                <option>Outro</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="ent-endereco">Endereço</label>
+                        <input class="form-input" type="text" id="ent-endereco" name="endereco"
+                            placeholder="Rua, número, complemento" required />
+                    </div>
+                </form>
+            </div>
+
+            <!-- Forma de pagamento -->
+            <div class="payment-section">
+                <p class="payment-section-title">// 02 — Forma de Pagamento</p>
+
+                <!-- Abas de pagamento -->
+                <div class="payment-tabs">
+                    <button class="pay-tab active" type="button">💳 Cartão</button>
+                    <button class="pay-tab" type="button">⚡ Pix</button>
+                    <button class="pay-tab" type="button">📄 Boleto</button>
+                </div>
+
+                <!-- Formulário do cartão -->
+                <form action="#" method="post" class="payment-form-inner">
+                    <div class="form-group">
+                        <label class="form-label" for="card-numero">Número do Cartão</label>
+                        <input class="form-input" type="text" id="card-numero" name="numero"
+                            placeholder="0000 0000 0000 0000" maxlength="19" required />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="card-nome">Nome no Cartão</label>
+                        <input class="form-input" type="text" id="card-nome" name="cartao_nome"
+                            placeholder="Como aparece no cartão" required />
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="card-validade">Validade</label>
+                            <input class="form-input" type="text" id="card-validade" name="validade" placeholder="MM/AA"
+                                maxlength="5" required />
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="card-cvv">CVV</label>
+                            <input class="form-input" type="text" id="card-cvv" name="cvv" placeholder="000"
+                                maxlength="4" required />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="card-parcelas">Parcelamento</label>
+                        <select class="form-select" id="card-parcelas" name="parcelas">
+                            <option>1x de R$676,00 (à vista)</option>
+                            <option>2x de R$338,00 sem juros</option>
+                            <option>3x de R$225,33 sem juros</option>
+                            <option>6x de R$112,67 sem juros</option>
+                            <option>12x de R$56,33 sem juros</option>
+                        </select>
+                    </div>
+                    <label class="form-check">
+                        <input type="checkbox" name="salvar_cartao" />
+                        <span class="form-check-label">Salvar cartão para próximas compras.</span>
+                    </label>
+                    <button type="submit" class="form-submit">🔒 CONFIRMAR PAGAMENTO — R$676</button>
+                </form>
+            </div>
+
+        </div>
+
+        <!-- Resumo lateral fixo -->
+        <div class="payment-resumo-wrapper">
+            <div class="cart-summary">
+                <p class="summary-title">RESUMO FINAL</p>
+
+                <!-- Mini lista de itens -->
+                <div class="payment-mini-lista">
+                    <div class="payment-mini-item">
+                        <div class="payment-mini-img prod-bg-1">👾</div>
+                        <div class="payment-mini-info">
+                            <p class="payment-mini-nome">ALIEN PROTOCOL HOODIE</p>
+                            <p class="payment-mini-tag">M · Qty 1</p>
+                        </div>
+                        <span class="payment-mini-preco">R$279</span>
+                    </div>
+                    <div class="payment-mini-item">
+                        <div class="payment-mini-img prod-bg-2">🎮</div>
+                        <div class="payment-mini-info">
+                            <p class="payment-mini-nome">CTRL+ALT+DEFEAT TEE</p>
+                            <p class="payment-mini-tag">G · Qty 2</p>
+                        </div>
+                        <span class="payment-mini-preco">R$298</span>
+                    </div>
+                    <div class="payment-mini-item">
+                        <div class="payment-mini-img prod-bg-6">🔮</div>
+                        <div class="payment-mini-info">
+                            <p class="payment-mini-nome">GLITCH REALITY CAP</p>
+                            <p class="payment-mini-tag">Único · Qty 1</p>
+                        </div>
+                        <span class="payment-mini-preco">R$99</span>
+                    </div>
+                </div>
+
+                <div class="summary-row">
+                    <span class="summary-label">Subtotal</span>
+                    <span class="summary-val">R$676</span>
+                </div>
+                <div class="summary-row">
+                    <span class="summary-label">Frete</span>
+                    <span class="summary-val summary-frete">Grátis ⚡</span>
+                </div>
+                <div class="summary-row">
+                    <span class="summary-label">Desconto</span>
+                    <span class="summary-val">R$0</span>
+                </div>
+                <div class="summary-total-row">
+                    <span class="summary-total-label">TOTAL</span>
+                    <span class="summary-total-val">R$676</span>
+                </div>
+                <p class="summary-parcelas">
+                    ou 12x de <strong>R$56,33</strong> sem juros
+                </p>
+            </div>
+        </div>
+
+    </section>
 
     <!-- ===== RODAPÉ ===== -->
     <footer>
