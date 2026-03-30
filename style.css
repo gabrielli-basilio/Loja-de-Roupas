@@ -202,7 +202,6 @@ img {
     letter-spacing: 1px;
 }
 
-
 /* --- Subtítulo de seção --- */
 .section-sub {
     font-size: 13px;
@@ -210,3 +209,26 @@ img {
     margin-top: 4px;
     letter-spacing: 1px;
 }
+
+/* --- Grid de produtos (4 colunas) --- */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+/* --- Card de produto --- */
+.product-card {
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: border-color 0.2s, transform 0.2s;
+    display: block;
+}
+
+.product-card:hover {
+    border-color: var(--cyan);
+    transform: translateY(-4px);
+}
+
