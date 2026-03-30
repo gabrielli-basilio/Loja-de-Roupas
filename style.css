@@ -86,6 +86,15 @@ img {
     gap: 32px;
 }
 
+.nav-links a {
+    font-family: var(--font-main);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--gray);
+    text-transform: uppercase;
+    transition: color 0.2s;
+}
 
 
 /* --- Faixa externa do ticker --- */
