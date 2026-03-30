@@ -1,0 +1,17 @@
+
+* --- Variáveis globais de cor, tipografia e layout --- */
+:root {
+    --bg:         #0a0a0f;
+    --bg2:        #111118;
+    --bg3:        #1a1a24;
+    --cyan:       #00f0ff;
+    --purple:     #9b5de5;
+    --pink:       #ff2d78;
+    --yellow:     #f5e642;
+    --white:      #f0f0ff;
+    --gray:       #6b6b80;
+    --border:     rgba(255,255,255,0.07);
+    --radius:     12px;
+    --font-main:  'Rajdhani', sans-serif;
+    --font-title: 'Orbitron', sans-serif;
+}
