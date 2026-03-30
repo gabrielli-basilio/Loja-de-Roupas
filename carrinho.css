@@ -1,0 +1,617 @@
+/* --- Cabeçalho interno da página do carrinho --- */
+.page-header {
+    padding: 48px 32px 32px;
+    border-bottom: 1px solid var(--border);
+    animation: fade-up 0.5s ease both;
+}
+
+/* --- Eyebrow do cabeçalho --- */
+.page-eyebrow {
+    font-family: var(--font-title);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--cyan);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+/* --- Título do cabeçalho --- */
+.page-title {
+    font-family: var(--font-title);
+    font-size: clamp(24px, 4vw, 48px);
+    color: var(--white);
+    line-height: 1.1;
+    margin-bottom: 12px;
+}
+
+/* --- Palavra destacada no título --- */
+.page-title span {
+    color: var(--cyan);
+}
+
+/* --- Descrição do cabeçalho --- */
+.page-desc {
+    font-size: 15px;
+    color: var(--gray);
+    line-height: 1.7;
+}
+
+/* --- Animação de entrada --- */
+@keyframes fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ============================================================
+   Layout do carrinho
+============================================================ */
+
+/* --- Grid: itens à esquerda, resumo à direita --- */
+.cart-layout {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 32px;
+    padding: 40px 32px;
+    align-items: start;
+}
+
+/* --- Seção de itens --- */
+.cart-items-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* --- Cada item do carrinho --- */
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px;
+    transition: border-color 0.3s;
+    animation: fade-up 0.5s ease both;
+}
+
+.cart-item:hover {
+    border-color: var(--cyan);
+}
+
+/* --- Imagem do item do carrinho --- */
+.cart-item-img {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--bg2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+
+.cart-item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* --- Informações do item --- */
+.cart-item-info {
+    flex: 1;
+}
+
+/* --- Nome do produto no carrinho --- */
+.cart-item-name {
+    font-family: var(--font-title);
+    font-size: 12px;
+    color: var(--white);
+    margin-bottom: 4px;
+}
+
+/* --- Tag de variação --- */
+.cart-item-tag {
+    font-size: 12px;
+    color: var(--purple);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+/* --- Controle de quantidade --- */
+.cart-item-qty {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* --- Botões de mais e menos --- */
+.qty-btn {
+    width: 28px;
+    height: 28px;
+    border: 1px solid rgba(0, 245, 255, 0.3);
+    background: transparent;
+    color: var(--cyan);
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qty-btn:hover {
+    background: rgba(0, 245, 255, 0.1);
+}
+
+/* --- Valor da quantidade --- */
+.qty-val {
+    font-family: var(--font-title);
+    font-size: 13px;
+    color: var(--white);
+    min-width: 20px;
+    text-align: center;
+}
+
+/* --- Botão remover item --- */
+.cart-remover {
+    font-size: 13px;
+    color: var(--pink);
+    cursor: pointer;
+    transition: opacity 0.2s;
+    margin-left: 4px;
+}
+
+.cart-remover:hover {
+    opacity: 0.7;
+}
+
+/* --- Preço do item --- */
+.cart-item-price {
+    font-family: var(--font-title);
+    font-size: 15px;
+    color: var(--cyan);
+    white-space: nowrap;
+}
+
+/* --- Box do cupom de desconto --- */
+.cart-cupom-box {
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px;
+    margin-top: 8px;
+}
+
+/* --- Título do cupom --- */
+.cart-cupom-title {
+    font-family: var(--font-title);
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: var(--white);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+/* --- Linha do formulário de cupom --- */
+.cart-cupom-form {
+    display: flex;
+    gap: 10px;
+}
+
+.cart-cupom-form .btn-primary {
+    white-space: nowrap;
+    padding: 12px 20px;
+}
+
+/* ============================================================
+   Resumo do pedido
+============================================================ */
+
+/* --- Wrapper do resumo (sticky) --- */
+.cart-resumo-wrapper {
+    position: sticky;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* --- Card de resumo --- */
+.cart-summary {
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* --- Título do resumo --- */
+.summary-title {
+    font-family: var(--font-title);
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: var(--white);
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 4px;
+}
+
+/* --- Linha de valor --- */
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* --- Label da linha --- */
+.summary-label {
+    font-size: 14px;
+    color: var(--gray);
+}
+
+/* --- Valor da linha --- */
+.summary-val {
+    font-size: 14px;
+    color: var(--white);
+}
+
+/* --- Frete grátis em destaque --- */
+.summary-frete {
+    font-family: var(--font-title);
+    font-size: 12px;
+    color: var(--cyan);
+}
+
+/* --- Desconto em destaque --- */
+.summary-desconto {
+    color: var(--pink);
+}
+
+/* --- Linha do total --- */
+.summary-total-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--border);
+    padding-top: 12px;
+    margin-top: 4px;
+}
+
+/* --- Label do total --- */
+.summary-total-label {
+    font-family: var(--font-title);
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: var(--white);
+}
+
+/* --- Valor total em destaque --- */
+.summary-total-val {
+    font-family: var(--font-title);
+    font-size: 22px;
+    color: var(--cyan);
+}
+
+/* --- Texto de parcelamento --- */
+.summary-parcelas {
+    font-size: 13px;
+    color: var(--gray);
+    text-align: center;
+}
+
+.summary-parcelas strong {
+    color: var(--cyan);
+}
+
+/* --- Botão finalizar no resumo --- */
+.summary-btn-finalizar {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 16px;
+}
+
+/* --- Garantias abaixo do resumo --- */
+.cart-garantias {
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* --- Cada item de garantia --- */
+.garantia-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: var(--gray);
+}
+
+.garantia-item span:first-child {
+    font-size: 18px;
+}
+
+/* ============================================================
+   Layout de pagamento
+============================================================ */
+
+/* --- Grid: formulário à esquerda, resumo à direita --- */
+.payment-layout {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 32px;
+    padding: 40px 32px 64px;
+    align-items: start;
+}
+
+/* --- Formulário de pagamento --- */
+.payment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* --- Formulário interno com campos --- */
+.payment-form-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+/* --- Cada seção do formulário de pagamento --- */
+.payment-section {
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 28px;
+    animation: fade-up 0.5s ease both;
+}
+
+/* --- Título de cada seção do pagamento --- */
+.payment-section-title {
+    font-family: var(--font-title);
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--cyan);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+}
+
+/* --- Abas de forma de pagamento --- */
+.payment-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* --- Cada aba --- */
+.pay-tab {
+    font-family: var(--font-title);
+    font-size: 11px;
+    font-weight: 600;
+    padding: 10px 18px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--gray);
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: var(--radius);
+    transition: border-color 0.2s, color 0.2s, background 0.2s;
+}
+
+.pay-tab.active,
+.pay-tab:hover {
+    border-color: var(--cyan);
+    color: var(--cyan);
+    background: rgba(0, 245, 255, 0.06);
+}
+
+/* --- Wrapper do resumo lateral no pagamento --- */
+.payment-resumo-wrapper {
+    position: sticky;
+    top: 80px;
+}
+
+/* ============================================================
+   Mini lista de itens no resumo do pagamento
+============================================================ */
+
+/* --- Lista de itens em miniatura --- */
+.payment-mini-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+}
+
+/* --- Cada item em miniatura --- */
+.payment-mini-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* --- Imagem miniatura --- */
+.payment-mini-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+/* --- Info do item miniatura --- */
+.payment-mini-info {
+    flex: 1;
+}
+
+/* --- Nome do item miniatura --- */
+.payment-mini-nome {
+    font-family: var(--font-title);
+    font-size: 9px;
+    color: var(--white);
+    margin-bottom: 2px;
+}
+
+/* --- Tag do item miniatura --- */
+.payment-mini-tag {
+    font-size: 12px;
+    color: var(--gray);
+}
+
+/* --- Preço do item miniatura --- */
+.payment-mini-preco {
+    font-family: var(--font-title);
+    font-size: 11px;
+    color: var(--cyan);
+    white-space: nowrap;
+}
+
+/* ============================================================
+   Responsividade
+============================================================ */
+
+/* --- Tablet: abaixo de 1024px --- */
+@media (max-width: 1024px) {
+
+    /* Carrinho vira coluna única */
+    .cart-layout {
+        grid-template-columns: 1fr;
+    }
+
+    /* Resumo perde o sticky */
+    .cart-resumo-wrapper {
+        position: static;
+    }
+
+    /* Pagamento vira coluna única */
+    .payment-layout {
+        grid-template-columns: 1fr;
+    }
+
+    /* Resumo lateral perde o sticky */
+    .payment-resumo-wrapper {
+        position: static;
+    }
+
+}
+
+/* --- Mobile: abaixo de 768px --- */
+@media (max-width: 768px) {
+
+    /* Padding menor no carrinho */
+    .cart-layout {
+        padding: 24px 20px;
+        gap: 20px;
+    }
+
+    /* Padding menor no pagamento */
+    .payment-layout {
+        padding: 24px 20px 48px;
+        gap: 20px;
+    }
+
+    /* Cabeçalho da página menor */
+    .page-header {
+        padding: 32px 20px 24px;
+    }
+
+    /* Item do carrinho em coluna */
+    .cart-item {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    /* Imagem do item menor */
+    .cart-item-img {
+        width: 64px;
+        height: 64px;
+    }
+
+    /* Preço do item ocupa linha inteira */
+    .cart-item-price {
+        width: 100%;
+        text-align: right;
+    }
+
+    /* Formulário de cupom em coluna */
+    .cart-cupom-form {
+        flex-direction: column;
+    }
+
+    /* Abas de pagamento menores */
+    .payment-tabs {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .pay-tab {
+        font-size: 10px;
+        padding: 8px 12px;
+    }
+
+    /* Form rows em coluna */
+    .form-row {
+        flex-direction: column;
+    }
+
+}
+
+/* --- Mobile pequeno: abaixo de 480px --- */
+@media (max-width: 480px) {
+
+    /* Título do cabeçalho menor */
+    .page-title {
+        font-size: 22px;
+    }
+
+    /* Resumo com padding menor */
+    .cart-summary {
+        padding: 18px;
+    }
+
+    /* Seção de pagamento com padding menor */
+    .payment-section {
+        padding: 20px;
+    }
+
+    /* Botão de finalizar ocupa largura total */
+    .summary-btn-finalizar {
+        font-size: 12px;
+        padding: 14px;
+    }
+
+    /* Valor total menor */
+    .summary-total-val {
+        font-size: 18px;
+    }
+
+}
