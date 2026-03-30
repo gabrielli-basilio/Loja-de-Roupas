@@ -186,11 +186,27 @@ img {
     padding: 64px 32px;
 }
 
-
 /* --- Cabeçalho de seção com título e ação --- */
 .section-header {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     margin-bottom: 32px;
+}
+
+/* --- Título de seção --- */
+.section-title {
+    font-family: var(--font-title);
+    font-size: clamp(20px, 3vw, 32px);
+    color: var(--white);
+    letter-spacing: 1px;
+}
+
+
+/* --- Subtítulo de seção --- */
+.section-sub {
+    font-size: 13px;
+    color: var(--purple);
+    margin-top: 4px;
+    letter-spacing: 1px;
 }
