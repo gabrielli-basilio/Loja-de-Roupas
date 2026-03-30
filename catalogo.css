@@ -54,3 +54,42 @@
   align-items: start;
   min-height: 80vh;
 }
+
+/* SIDEBAR — sticky dentro do grid */
+.catalog-sidebar {
+  grid-column: 1;
+  padding: 28px 24px;
+  border-right: 1px solid var(--border);
+  position: sticky;
+  top: 64px;
+  max-height: calc(100vh - 64px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+
+.catalog-sidebar::-webkit-scrollbar       { width: 4px; }
+.catalog-sidebar::-webkit-scrollbar-track { background: transparent; }
+.catalog-sidebar::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+/* FORMULÁRIO DE FILTROS */
+.filter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width: 100%;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.filter-label {
+  font-family: var(--font-title);
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: var(--purple);
+  text-transform: uppercase;
+}
