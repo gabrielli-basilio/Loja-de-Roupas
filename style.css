@@ -644,6 +644,59 @@ display: grid;
     .features-flex {
     gap: 16px;
     }
+
+}
+
+/* --- Mobile: abaixo de 768px --- */
+@media (max-width: 768px) {
+
+
+  /* Navbar: esconde links do menu */
+  .nav-links {
+    display: none;
+  }
+
+
+  .navbar {
+    padding: 0 20px;
+  }
+
+
+  /* Hero com padding menor */
+  .hero {
+    padding: 16px;
+    gap: 12px;
+    min-height: auto;
+  }
+
+  .hero-main-card {
+    padding: 28px 20px;
+  }
+
+  /* Seções com padding menor */
+  .section {
+    padding: 40px 20px;
+  }
+
+  .features {
+    padding: 40px 20px;
+  }
+
+  /* Grid de produtos vira 1 coluna */
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Scroll do hero ocupa largura total */
+  .hero-scroll-card {
+    min-height: 140px;
+  }
+
+  .scroll-img {
+    width: 70px;
+    height: 80px;
+  }
+
 }
 
 
