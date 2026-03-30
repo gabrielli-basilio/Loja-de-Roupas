@@ -423,3 +423,17 @@ img {
     font-size: 32px;  
 }
 
+/* --- Título da feature --- */
+.feature-title {
+    font-family: var(--font-title);
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: var(--white);
+}
+
+/* --- Descrição da feature --- */
+.feature-desc {
+    font-size: 14px;
+    color: var(--gray);
+    line-height: 1.6;
+}
