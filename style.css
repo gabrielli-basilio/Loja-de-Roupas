@@ -103,3 +103,13 @@ img {
     gap: 48px;
     animation: ticker-move 28s linear infinite;
 }
+
+/* --- Itens do ticker --- */
+.ticker-item {
+    font-family: var(--font-main);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--bg);
+}
