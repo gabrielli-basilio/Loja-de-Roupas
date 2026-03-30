@@ -182,6 +182,16 @@ img {
     to   { transform: translateX(-50%); }
 }
 
+/* --- Grid do hero com 3 áreas --- */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  grid-template-rows: auto auto;
+  gap: 16px;
+  padding: 32px;
+  min-height: 520px;
+}
+
 .section {
     padding: 64px 32px;
 }
