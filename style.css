@@ -318,3 +318,19 @@ img {
     margin-left: 6px;
 }
 
+/* --- Botão de adicionar ao carrinho --- */
+.btn-add {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--cyan);
+    color: var(--bg);
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+
+.btn-add:hover { background: var(--purple); }
