@@ -748,4 +748,37 @@ display: grid;
     }
 }
 
+.newsletter {
+  padding: 80px 32px;
+  background: linear-gradient(135deg, rgba(123,47,255,0.08), rgba(0,245,255,0.04));
+  border-top: 1px solid rgba(0,245,255,0.1);
+}
 
+.newsletter-inner {
+  max-width: 640px;
+  margin: 0 auto;
+}
+.newsletter-eyebrow {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 13px;
+  color: var(--purple);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 16px;
+}
+
+.newsletter-title {
+  font-family: 'Press Start 2P', monospace;
+  font-size: clamp(14px, 2.5vw, 20px);
+  line-height: 1.6;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+.newsletter-title span { color: var(--cyan); }
+
+.newsletter-desc {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 16px;
+  color: var(--gray);
+  margin-bottom: 36px;
+}
