@@ -875,9 +875,9 @@ categorias 8
 /* --- Grid de categorias --- */
 .categories-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto;
-  gap: 16px;
+  grid-template-columns:repeat(3, 1fr);
+  grid-template-rows:auto auto;
+  gap:16px;
 }
 
 
@@ -978,4 +978,63 @@ categorias 8
   color: var(--cyan);
   margin-top: 4px;
   letter-spacing: 0.5px;
+}
+
+/* --- Seção de newsletter com borda neon --- */
+.newsletter {
+  padding: 80px 32px;
+  background: var(--bg2);
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+
+/* --- Conteúdo centralizado --- */
+.newsletter-inner {
+  max-width: 560px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+
+/* --- Eyebrow da newsletter --- */
+.newsletter-eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: var(--purple);
+  text-transform: uppercase;
+}
+
+
+/* --- Título da newsletter --- */
+.newsletter-title {
+  font-family: var(--font-title);
+  font-size: clamp(28px, 4vw, 48px);
+  line-height: 1.1;
+  color: var(--white);
+}
+
+
+/* --- Palavra destacada --- */
+.newsletter-title span { color: var(--cyan); }
+
+
+/* --- Descrição --- */
+.newsletter-desc {
+  font-size: 16px;
+  color: var(--gray);
+  line-height: 1.7;
+}
+
+
+/* --- Botões da newsletter --- */
+.newsletter-btns {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
