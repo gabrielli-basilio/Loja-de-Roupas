@@ -649,54 +649,103 @@ display: grid;
 
 /* --- Mobile: abaixo de 768px --- */
 @media (max-width: 768px) {
-
-
   /* Navbar: esconde links do menu */
-  .nav-links {
+    .nav-links {
     display: none;
-  }
+    }
 
-
-  .navbar {
+    .navbar {
     padding: 0 20px;
-  }
-
+    }
 
   /* Hero com padding menor */
-  .hero {
+    .hero {
     padding: 16px;
     gap: 12px;
     min-height: auto;
-  }
+    }
 
-  .hero-main-card {
+    .hero-main-card {
     padding: 28px 20px;
-  }
+    }
 
   /* Seções com padding menor */
-  .section {
+    .section {
     padding: 40px 20px;
-  }
+    }
 
-  .features {
+    .features {
     padding: 40px 20px;
-  }
+    }
 
   /* Grid de produtos vira 1 coluna */
-  .products-grid {
+    .products-grid {
     grid-template-columns: 1fr;
-  }
+    }
 
   /* Scroll do hero ocupa largura total */
-  .hero-scroll-card {
+    .hero-scroll-card {
     min-height: 140px;
-  }
+    }
 
-  .scroll-img {
+    .scroll-img {
     width: 70px;
     height: 80px;
-  }
+    }
 
+}
+
+/* --- Mobile pequeno: abaixo de 480px --- */
+@media (max-width: 480px) {
+  /* Logo menor */
+    .nav-logo {
+    font-size: 16px;
+    }
+
+  /* Botão cadastrar menor */
+    .btn-cadastrar {
+    font-size: 11px;
+    padding: 6px 12px;
+    }
+
+  /* Título do hero menor */
+    .hero-title {
+    font-size: 28px;
+    }
+
+  /* Botões do hero em coluna */
+    .hero-btns {
+    flex-direction: column;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+    text-align: center;
+    width: 100%;
+    }
+
+  /* Features em coluna única */
+    .features-flex {
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .feature-item {
+    max-width: 100%;
+    width: 100%;
+    }
+
+  /* Título de seção menor */
+    .section-title {
+    font-size: 18px;
+    }
+
+  /* Cabeçalho de seção em coluna */
+    .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    }
 }
 
 
