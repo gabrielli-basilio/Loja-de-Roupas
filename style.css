@@ -214,6 +214,26 @@ img {
   text-transform: uppercase;
 }
 
+
+/* --- Título principal --- */
+.hero-title {
+  font-family: var(--font-title);
+  font-size: clamp(36px, 5vw, 72px);
+  line-height: 1.05;
+  color: var(--white);
+}
+
+/* --- Palavra destacada no título --- */
+.hero-title span { color: var(--cyan); }
+
+/* --- Descrição do hero --- */
+.hero-desc {
+  font-size: 17px;
+  color: var(--gray);
+  max-width: 480px;
+  line-height: 1.7;
+}
+
 .section {
     padding: 64px 32px;
 }
