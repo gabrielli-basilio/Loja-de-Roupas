@@ -72,3 +72,11 @@ img {
     border-bottom: 1px solid var(--border);
 }
 
+/* --- Faixa externa do ticker --- */
+
+.ticker {
+  overflow: hidden;
+  background: var(--cyan);
+  padding: 10px 0;
+  white-space: nowrap;
+}
