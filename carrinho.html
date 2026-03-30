@@ -49,8 +49,128 @@
         <p class="page-desc">Revise seus itens e finalize o pedido abaixo.</p>
     </div>
 
-    <!-- Seção do carrinho -->
-    <section class="cart-layout"></section>
+    <!-- ===== CARRINHO ===== -->
+    <section class="cart-layout">
+
+        <!-- Lista de itens -->
+        <div class="cart-items-section">
+            <div class="section-header" style="margin-bottom:20px;">
+                <h2 class="section-title" style="font-size:13px;">ITENS (3)</h2>
+                <a href="catalogo.html" class="btn-secondary" style="font-size:10px;padding:8px 16px;">← Continuar
+                    Comprando</a>
+            </div>
+
+            <!-- Item 1 -->
+            <div class="cart-item">
+                <div class="cart-item-img prod-bg-1">
+                    <img src="" alt="Alien Protocol Hoodie" />
+                </div>
+                <div class="cart-item-info">
+                    <p class="cart-item-name">ALIEN PROTOCOL HOODIE</p>
+                    <p class="cart-item-tag">// Moletom — Tamanho M</p>
+                    <div class="cart-item-qty">
+                        <button class="qty-btn" type="button">−</button>
+                        <span class="qty-val">1</span>
+                        <button class="qty-btn" type="button">+</button>
+                        <span class="cart-remover">Remover</span>
+                    </div>
+                </div>
+                <div class="cart-item-price">R$279</div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="cart-item">
+                <div class="cart-item-img prod-bg-2">
+                    <img src="" alt="Ctrl Alt Defeat Tee" />
+                </div>
+                <div class="cart-item-info">
+                    <p class="cart-item-name">CTRL+ALT+DEFEAT TEE</p>
+                    <p class="cart-item-tag">// Camiseta — Tamanho G</p>
+                    <div class="cart-item-qty">
+                        <button class="qty-btn" type="button">−</button>
+                        <span class="qty-val">2</span>
+                        <button class="qty-btn" type="button">+</button>
+                        <span class="cart-remover">Remover</span>
+                    </div>
+                </div>
+                <div class="cart-item-price">R$298</div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="cart-item">
+                <div class="cart-item-img prod-bg-6">
+                    <img src="" alt="Glitch Reality Cap" />
+                </div>
+                <div class="cart-item-info">
+                    <p class="cart-item-name">GLITCH REALITY CAP</p>
+                    <p class="cart-item-tag">// Boné — Único</p>
+                    <div class="cart-item-qty">
+                        <button class="qty-btn" type="button">−</button>
+                        <span class="qty-val">1</span>
+                        <button class="qty-btn" type="button">+</button>
+                        <span class="cart-remover">Remover</span>
+                    </div>
+                </div>
+                <div class="cart-item-price">R$99</div>
+            </div>
+
+            <!-- Cupom de desconto -->
+            <div class="cart-cupom-box">
+                <p class="cart-cupom-title">Cupom de Desconto</p>
+                <form action="#" method="post" class="cart-cupom-form">
+                    <input class="form-input" type="text" name="cupom" placeholder="Ex: NEON15" />
+                    <button type="submit" class="btn-primary">Aplicar</button>
+                </form>
+            </div>
+
+        </div>
+
+        <!-- Resumo do pedido -->
+        <div class="cart-resumo-wrapper">
+            <div class="cart-summary">
+                <p class="summary-title">RESUMO DO PEDIDO</p>
+                <div class="summary-row">
+                    <span class="summary-label">Subtotal (3 itens)</span>
+                    <span class="summary-val">R$676</span>
+                </div>
+                <div class="summary-row">
+                    <span class="summary-label">Frete</span>
+                    <span class="summary-val summary-frete">Grátis ⚡</span>
+                </div>
+                <div class="summary-row">
+                    <span class="summary-label">Desconto</span>
+                    <span class="summary-val summary-desconto">− R$0</span>
+                </div>
+                <div class="summary-total-row">
+                    <span class="summary-total-label">TOTAL</span>
+                    <span class="summary-total-val">R$676</span>
+                </div>
+                <p class="summary-parcelas">
+                    ou 12x de <strong>R$56,33</strong> sem juros
+                </p>
+                <a href="#pagamento" class="btn-primary summary-btn-finalizar">
+                    ⚡ FINALIZAR PEDIDO
+                </a>
+            </div>
+
+            <!-- Mini garantias -->
+            <div class="cart-garantias">
+                <div class="garantia-item">
+                    <span>🔒</span>
+                    <span>Compra 100% segura e criptografada</span>
+                </div>
+                <div class="garantia-item">
+                    <span>♻️</span>
+                    <span>30 dias para troca sem burocracia</span>
+                </div>
+                <div class="garantia-item">
+                    <span>⚡</span>
+                    <span>Despacho em até 24 horas úteis</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
 
     <!-- Seção de pagamento -->
     <section id="pagamento" class="payment-layout"></section>
