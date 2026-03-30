@@ -181,3 +181,16 @@ img {
     from { transform: translateX(0); }
     to   { transform: translateX(-50%); }
 }
+
+.section {
+    padding: 64px 32px;
+}
+
+
+/* --- Cabeçalho de seção com título e ação --- */
+.section-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
