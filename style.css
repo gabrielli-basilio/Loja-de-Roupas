@@ -394,17 +394,17 @@ display: grid;
 
 /* --- Texto abaixo da imagem --- */
 .scroll-item span {
-  font-family: var(--font-title);
-  font-size: 9px;
-  letter-spacing: 1px;
-  color: var(--gray);
-  white-space: nowrap;
+    font-family: var(--font-title);
+    font-size: 9px;
+    letter-spacing: 1px;
+    color: var(--gray);
+    white-space: nowrap;
 }
 
 /* --- Animação lateral --- */
 @keyframes scroll-lateral {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
 }
 
 .section {
@@ -609,4 +609,46 @@ display: grid;
     font-size: 14px;
     color: var(--gray);
     line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  /* Hero vira coluna única */
+    .hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    padding: 24px;
+    }
+
+
+    .hero-main-card {
+    grid-column: 1;
+    grid-row: 1;
+    }
+
+
+    .hero-text-card {
+    grid-column: 1;
+    grid-row: 2;
+    }
+
+
+    .hero-scroll-card {
+    grid-column: 1;
+    grid-row: 3;
+    max-width: 100%;
+    }
+
+
+  /* Grid de produtos vira 2 colunas */
+    .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    }
+
+
+  /* Features em 2 colunas */
+    .features-flex {
+    gap: 16px;
+    }
+
+
 }
