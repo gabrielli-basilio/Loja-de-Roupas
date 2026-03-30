@@ -113,3 +113,9 @@ img {
     text-transform: uppercase;
     color: var(--bg);
 }
+
+/* --- Animação de rolagem do ticker --- */
+@keyframes ticker-move {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
