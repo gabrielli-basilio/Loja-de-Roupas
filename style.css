@@ -182,6 +182,38 @@ img {
     to   { transform: translateX(-50%); }
 }
 
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  grid-template-rows: 1fr 1fr;
+  gap: 16px;
+  padding: 32px;
+  min-height: 520px;
+}
+
+/* --- Card principal (coluna 1, linhas 1 e 2) --- */
+.hero-main-card {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* --- Eyebrow do hero --- */
+.hero-eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: var(--cyan);
+  text-transform: uppercase;
+}
+
 .section {
     padding: 64px 32px;
 }
