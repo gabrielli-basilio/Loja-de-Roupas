@@ -234,6 +234,30 @@ img {
   line-height: 1.7;
 }
 
+
+/* --- Grupo de botões --- */
+.hero-btns {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* --- Botão primário --- */
+.btn-primary {
+  font-family: var(--font-main);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 14px 28px;
+  background: var(--cyan);
+  color: var(--bg);
+  border-radius: var(--radius);
+  transition: opacity 0.2s;
+}
+
+.btn-primary:hover { opacity: 0.85; }
+
 .section {
     padding: 64px 32px;
 }
