@@ -96,6 +96,18 @@ img {
     transition: color 0.2s;
 }
 
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--cyan);
+}
+
+/* --- Ações da navbar (botão + carrinho) --- */
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
 
 /* --- Faixa externa do ticker --- */
 
