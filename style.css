@@ -369,6 +369,31 @@ display: grid;
     width: max-content;
 }
 
+/* --- Cada item do scroll --- */
+.scroll-item {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+    min-width: 90px;
+}
+
+
+/* --- Imagem do scroll --- */
+.scroll-img {
+    width: 90px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 8px;
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    display: block;
+    flex-shrink: 0;
+}
+
+
 .section {
     padding: 64px 32px;
 }
