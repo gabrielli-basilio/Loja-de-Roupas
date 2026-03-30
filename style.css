@@ -379,7 +379,6 @@ display: grid;
     min-width: 90px;
 }
 
-
 /* --- Imagem do scroll --- */
 .scroll-img {
     width: 90px;
@@ -393,6 +392,20 @@ display: grid;
     flex-shrink: 0;
 }
 
+/* --- Texto abaixo da imagem --- */
+.scroll-item span {
+  font-family: var(--font-title);
+  font-size: 9px;
+  letter-spacing: 1px;
+  color: var(--gray);
+  white-space: nowrap;
+}
+
+/* --- Animação lateral --- */
+@keyframes scroll-lateral {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
 
 .section {
     padding: 64px 32px;
