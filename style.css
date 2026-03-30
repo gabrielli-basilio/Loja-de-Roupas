@@ -619,18 +619,15 @@ display: grid;
     padding: 24px;
     }
 
-
     .hero-main-card {
     grid-column: 1;
     grid-row: 1;
     }
 
-
     .hero-text-card {
     grid-column: 1;
     grid-row: 2;
     }
-
 
     .hero-scroll-card {
     grid-column: 1;
@@ -638,17 +635,15 @@ display: grid;
     max-width: 100%;
     }
 
-
   /* Grid de produtos vira 2 colunas */
     .products-grid {
     grid-template-columns: repeat(2, 1fr);
     }
 
-
   /* Features em 2 colunas */
     .features-flex {
     gap: 16px;
     }
-
-
 }
+
+
