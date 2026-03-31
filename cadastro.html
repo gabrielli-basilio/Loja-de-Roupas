@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro — NEONCRAFT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="cadastro.css" />
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <a href="index.html" class="nav-logo">NEONCRAFT</a>
+        <ul class="nav-links">
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="index.html#categorias">Categorias</a></li>
+            <li><a href="index.html#sobre">Sobre</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="cadastro.html" class="btn-cadastrar">Cadastrar</a>
+            <a href="carrinho.html" class="cart-icon">🛒
+                <span class="cart-badge">0</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="catalog-header">
+        <div class="catalog-header-inner">
+            <p class="hero-eyebrow">▶ ACESSO VIP</p>
+            <h1 class="catalog-title">CADASTRO <span>&</span> CONTATO</h1>
+            <p class="catalog-desc">Entre na rede e receba drops exclusivos antes de todo mundo.</p>
+        </div>
+        <nav class="breadcrumb">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <span>Cadastro</span>
+        </nav>
+    </div>
+
+    <!-- Formulário -->
+    <section class="newsletter" id="contato">
+        <div class="newsletter-inner" id="cadastro">
+            <p class="newsletter-eyebrow">// ACESSO VIP</p>
+            <h2 class="newsletter-title">ENTRE NA <span>REDE</span><br>ANTES DE TODOS</h2>
+            <p class="newsletter-desc">Cadastre-se e receba drops exclusivos e descontos de até 40%.</p>
+
+            <form class="newsletter-form" onsubmit="handleSubmit(event)" novalidate>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label" for="nome">Nome</label>
+                        <input class="form-input" type="text" id="nome" placeholder="Seu nome" required />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="sobrenome">Sobrenome</label>
+                        <input class="form-input" type="text" id="sobrenome" placeholder="Seu sobrenome" required />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="email">E-mail</label>
+                    <input class="form-input" type="email" id="email" placeholder="seu@email.com" required />
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label" for="cidade">Cidade</label>
+                        <input class="form-input" type="text" id="cidade" placeholder="Sua cidade" />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="estilo">Estilo Favorito</label>
+                        <select class="form-select" id="estilo">
+                            <option value="">Selecione...</option>
+                            <option>Hoodies & Moletom</option>
+                            <option>Camisetas & Tops</option>
+                            <option>Jaquetas & Bombers</option>
+                            <option>Acessórios</option>
+                            <option>Tudo!</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="mensagem">Mensagem (opcional)</label>
+                    <textarea class="form-textarea" id="mensagem" placeholder="Alguma sugestão?"></textarea>
+                </div>
+
+                <label class="form-check">
+                    <input type="checkbox" id="termos" required />
+                    <span class="form-check-label">Concordo com os <a href="#">Termos de Uso</a> e a <a href="#">Política de Privacidade</a>.</span>
+                </label>
+
+                <button type="submit" class="form-submit">⚡ ENTRAR NA REDE</button>
+
+                <div class="form-success" id="formSuccess">
+                    <p>✓ CADASTRO REALIZADO</p>
+                    <p>Bem-vindo à rede! Fique de olho no seu e-mail.</p>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="catalog-footer">
+        <p>© 2099 NEONCRAFT — Feito para quem vive no grid.</p>
+        <div class="footer-links">
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Trocas e Devoluções</a>
+            <a href="cadastro.html">Contato</a>
+        </div>
+    </footer>
+
+</body>
+</html>
